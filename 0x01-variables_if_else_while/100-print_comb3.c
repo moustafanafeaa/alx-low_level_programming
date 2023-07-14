@@ -17,7 +17,7 @@ for (one = 0; one <= 9; one++)
 		{
 			putchar(one + '0');
 			putchar(teen + '0');
-			if (!((teen == 8) && (one == 9)))
+			if (!(teen == 8 && one == 9))
 			{
 				putchar(',');
 				putchar(' ');
