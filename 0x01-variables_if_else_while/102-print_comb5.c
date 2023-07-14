@@ -21,7 +21,7 @@ for (j = 0; j < 100; j++)
 		if (i != 98 || j != 99)
 		{
 			putchar(',');
-			putchar(' ')
+			putchar(' ');
 		}
 	}
 }
