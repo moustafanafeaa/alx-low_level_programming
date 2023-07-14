@@ -15,6 +15,7 @@ int main(void)
         c++;
 }
 putchar('\n');
+	c = 'A';
 	while (c = 'A')
 {
 	putchar(c);
