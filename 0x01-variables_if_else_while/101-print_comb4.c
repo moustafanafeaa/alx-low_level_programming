@@ -16,7 +16,7 @@ for (tow = 0; tow <= 9; tow++)
 {
 for (thr = 0; thr <= 9; thr++)
 {
-	if (!((tow == one) || (tow < one) || (tow > thr) || (one == tow)))
+	if (!((tow == one) || (tow < one) || (tow > thr) || (thr == tow)))
 	{
 		putchar(one + '0');
 		putchar(tow + '0');
