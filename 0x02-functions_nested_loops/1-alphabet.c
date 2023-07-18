@@ -4,14 +4,14 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void);
 {
-    char c;
+    int c;
 
 for (c = 'a';c <= 'z'; c++)
 {
-       putchar(c);
+       _putchar(c);
 }
-putchar('\n');
-    return (0);
+_putchar('\n');
+    
 }
