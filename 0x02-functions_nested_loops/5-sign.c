@@ -1,7 +1,7 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * _print_sign - check sign of the number
+ * print_sign - Check sign of the number
  *
  * @n: check input function
  *
