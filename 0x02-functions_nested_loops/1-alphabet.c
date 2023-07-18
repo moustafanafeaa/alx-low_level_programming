@@ -1,10 +1,7 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0 
- *
- * _print_alphabet - Print alphabet from a to z
+ * print_alphabet - Utilize on the _putchar function to
+ * Print the alphabet a - z
  */
 void print_alphabet(void)
 {
