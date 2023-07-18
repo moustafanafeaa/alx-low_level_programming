@@ -2,7 +2,9 @@
 /**
  * main - check the code
  *
- * Return: Always 0.
+ * Return: Always 0 
+ *
+ * _print_alphabet - Print alphabet from a to z
  */
 void print_alphabet(void)
 {
