@@ -10,7 +10,8 @@
  */
 int main(void)
 {
-	int i, f1 = 0, f2 = 1, sum;
+	int i;
+	unsigned int f1 = 0, f2 = 1, sum;
 
 	for (i = 0; i < 50; i++)
 	{
