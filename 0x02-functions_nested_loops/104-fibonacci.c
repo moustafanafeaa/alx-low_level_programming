@@ -12,12 +12,12 @@ int numLength(int n)
 {
 	int length = 0;
 
-	if (!num)
+	if (!n)
 		return (1);
-	while (num)
+	while (n)
 	{
 		n /= 10;
-		length++
+		length++;
 	}
 	return (length);
 }
@@ -45,7 +45,7 @@ for (count = 0; count <= 98; count++)
 	}
 	while (f10 > 0 && init0s > 0)
 	{
-		printf("%d", 0)
+		printf("%d", 0);
 		init0s--;
 	}
 
@@ -56,7 +56,7 @@ for (count = 0; count <= 98; count++)
 	f1 = f2;
 	f2 = sum;
 	f10 = f20;
-	f20 = sum0;
+	f20 = sumo;
 
 	if (count != 98)
 	{
