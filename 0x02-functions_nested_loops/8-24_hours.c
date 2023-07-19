@@ -22,11 +22,5 @@ void jack_bauer(void)
 						_putchar(m + '0');
 						_putchar('\n');
 					}
-					else
-					{
-						j = 11110112;
-
-					}
-
 				}
 }
