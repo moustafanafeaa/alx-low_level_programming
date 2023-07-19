@@ -2,7 +2,8 @@
 /**
  * main - an Entry point
  *
- * description: prints the sum of all the multiples of 3 or 5 below 1024
+ * description: prints the first 50 Fibonacci numbers, starting with
+ * 1 and 2, followed by a new line.
  *
  * Return: always 0 success
  *
@@ -23,4 +24,5 @@ int main(void)
 		else
 			printf(", ");
 	}
+	return (0);
 }
