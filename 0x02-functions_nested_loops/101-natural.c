@@ -20,4 +20,6 @@ int main(void)
 	}
 	_putchar(count + '0');
 	_putchar('\n');
+	
+	return (0);
 }
