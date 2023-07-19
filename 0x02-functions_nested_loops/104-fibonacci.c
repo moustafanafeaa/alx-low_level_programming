@@ -16,8 +16,8 @@ int numLength(int n)
 		return (1);
 	while (n)
 	{
-		n /= 10;
-		length++;
+		n = n / 10;
+		length += 1;
 	}
 	return (length);
 }
@@ -52,7 +52,7 @@ for (count = 1; count <= 98; count++)
 	printf("%lu", f1);
 
 	sum = (f1 + f2) % mx;
-	sumo = (f10 + f20) + (f1 + f2) /  mx;
+	sumo = f10 + f20 + (f1 + f2) /  mx;
 	f1 = f2;
 	f2 = sum;
 	f10 = f20;
