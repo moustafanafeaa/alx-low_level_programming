@@ -22,6 +22,8 @@ void print_times_table(int n)
 			{
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+                                _putchar(' ');
 				mult = i * j;
 				if (mult <= 9)
 				{
@@ -32,8 +34,9 @@ void print_times_table(int n)
 					_putchar((mult / 10) + '0');
 					_putchar((mult % 10) + '0');
 				}
-				_putchar(' ');
-				_putchar(' ');
+			/**	_putchar(' ');
+			 *	_putchar(' ');
+			 */
 			}
 			_putchar('\n');
 		}
