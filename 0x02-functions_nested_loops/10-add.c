@@ -2,7 +2,9 @@
 /**
  * add - adds two integers and returns the result.
  *
- * return: 0 success
+ * @i: check input function
+ * @j: check input function
+ * return: res of i and j
  *
  */
 int add(int i, int j)
