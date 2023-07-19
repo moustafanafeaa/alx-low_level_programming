@@ -35,14 +35,14 @@ int main(void)
 	int count, init0s;
 	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, f10 = 0, f20 = 1, sumo = 0;
 
-for (count = 0; count <= 98; count++)
+for (count = 1; count <= 98; count++)
 {
 	if (f10 > 0)
 	{
 		printf("%lu", f10);
-		init0s = numLength(mx) - 1 - numLength(f1);
-
 	}
+	init0s = numLength(mx) - 1 - numLength(f1);
+
 	while (f10 > 0 && init0s > 0)
 	{
 		printf("%d", 0);
