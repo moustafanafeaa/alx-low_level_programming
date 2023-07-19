@@ -10,7 +10,8 @@
  */
 int main(void)
 {
-	unsigned long f1 = 0, f2 = 1, sum, totsum;
+	unsigned long f1 = 0, f2 = 1, sum;
+	float totsum;
 
 	while (1)
 	{
@@ -18,7 +19,7 @@ int main(void)
 		f1 = f2;
 		f2 = sum;
 
-		if (sum >= 4000000)
+		if (sum > 4000000)
 			break;
 		if (sum % 2 == 0)
 			totsum += sum;
