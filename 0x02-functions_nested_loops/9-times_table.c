@@ -20,7 +20,6 @@ void times_table(void)
 			_putchar(' ');
 
 			pro = num * mult;
-			
 			if (pro <= 9)
 			{
 				_putchar(' ');
@@ -29,7 +28,7 @@ void times_table(void)
 			{
 				_putchar((pro / 10) + '0');
 			}
-			_putchar(pro % 10);
+			_putchar(pro % 10 + '0');
 		} _putchar('\n');
 	}
 }
