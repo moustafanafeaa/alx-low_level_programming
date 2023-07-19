@@ -4,7 +4,8 @@
  *
  * @i: check input function
  * @j: check input function
- * return: res of i and j
+ *
+ * Return: res of i and j
  *
  */
 int add(int i, int j)
