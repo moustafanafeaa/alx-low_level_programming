@@ -24,6 +24,8 @@ void jack_bauer(void)
 					}
 					else
 					{
+						j = 12;
+						i = 3;
 						break;
 					}
 				}
