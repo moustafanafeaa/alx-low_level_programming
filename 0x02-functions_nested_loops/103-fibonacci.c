@@ -10,10 +10,9 @@
  */
 int main(void)
 {
-	int i;
 	unsigned long f1 = 0, f2 = 1, sum, totsum;
 
-	while (true)
+	while (1)
 	{
 		sum = f1 + f2;
 		f1 = f2;
