@@ -3,7 +3,7 @@
  * print_times_table -  that prints the n times table, starting with 0. If
  * n is greater than 15 or less than 0 the function should not print anything
  *
- * @n - takes input to function
+ * @n: takes input to function
  *
  * example: 0, 0, 0
  *          0, 1, 2
@@ -13,7 +13,7 @@ void print_times_table(int n)
 {
 	int mult, i, j;
 
-	if (n <= 15 && n > 0)
+	if (n <= 15 && n >= 0)
 	{
 		for (i = 0; i <= n; i++)
 		{
@@ -37,7 +37,7 @@ void print_times_table(int n)
 					_putchar((mult / 100) + '0');
 					_putchar((mult / 10) % 10 + '0');
 				}
-				else if (mult <=99 && mult >= 10)
+				else if (mult <= 99 && mult >= 10)
 				{
 					_putchar((mult / 10) + '0');
 				}
