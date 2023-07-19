@@ -10,8 +10,7 @@
  */
 int main(void)
 {
-	unsigned long f1 = 0, f2 = 1, sum;
-	float totsum;
+	unsigned long f1 = 0, f2 = 1, sum, totsum;
 
 	while (1)
 	{
@@ -24,6 +23,6 @@ int main(void)
 		if (sum % 2 == 0)
 			totsum += sum;
 	}
-	printf("%f\n", totsum);
+	printf("%lu\n", totsum);
 	return (0);
 }
