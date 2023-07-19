@@ -24,6 +24,6 @@ int main(void)
 		if (sum % 2 == 0)
 			totsum += sum;
 	}
-	printf("%lu\n", totsum);
+	printf("%f\n", totsum);
 	return (0);
 }
