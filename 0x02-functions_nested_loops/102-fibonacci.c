@@ -15,9 +15,9 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		sum = f1 + f2;
+		printf("%d", sum);
 		f1 = f2;
 		f2 = sum;
-		printf("%d", sum);
 
 		if (i == 49)
 			printf("\n");
