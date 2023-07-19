@@ -18,8 +18,7 @@ int main(void)
 			count += n;
 		}
 	}
-	_putchar(count + '0');
-	_putchar('\n');
+	printf("%d\n", count);
 	
 	return (0);
 }
