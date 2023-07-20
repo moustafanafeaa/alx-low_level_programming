@@ -11,13 +11,18 @@
  */
 int main(void)
 {
-	unsigned long int n = 612852475143, i;
+	long int n = 612852475143, i, d;
 
-	for (i = 3; i < 782849; i += 2)
+	for (i = 1; i <= n; i++)
 	{
-		while ((n % i == 0) && (n != i)
-			n /= i;
+		if (n % i == 0)
+			if (n == i)
+			{
+				printf("%ld\n", i);
+				break;
+			}
+		d = n / i;
+		n = d
 	}
-	printf("%lu\n", n);
 	return (0);
 }
