@@ -11,25 +11,13 @@
  */
 int main(void)
 {
-	long int number, large_factor = 0, i = 2;
+	unsigned long int n = 612852475143, i;
 
-while (number != 1)
-{
-
-	if (number % i == 0)
+	for (i = 3; i < 782849; i += 2)
 	{
-		while (number % i == 0)
-		{
-			printf ("%ld\t", i);
-			number /= i;
-		}
-
-		large_factor = i;
+		while ((n % i == 0) && (n != i)
+			n /= i;
 	}
-
-	i++;
-}
-
-printf("%ld\n", large_factor);
-return (0);
+	printf("%lu\n", n);
+	return (0);
 }
