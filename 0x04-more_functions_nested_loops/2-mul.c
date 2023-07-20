@@ -10,8 +10,9 @@
  */
 int mul(int a, int b)
 {
-	int mul;
+	int mult;
 
-	putchar(mul + 48);
+	mult = a + b;
+	putchar(mult + 48);
 return (0);
 }
