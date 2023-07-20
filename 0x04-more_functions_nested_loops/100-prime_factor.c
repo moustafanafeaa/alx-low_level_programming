@@ -9,26 +9,27 @@
  * Return: return 0 seccess
  *
  */
-int main ()
+int main(void)
+{
+	long int number, large_factor = 0, i = 2;
+
+while (number != 1)
 {
 
-long long int number, large_factor=0, i=2;
-
-while (number!=1)
-{
-
-	if (number%i==0)
+	if (number % i == 0)
 	{
-		while (number%i==0)
+		while (number % i == 0)
 		{
 			printf ("%ld\t", i);
-			number/=i;
+			number /= i;
 		}
 
-		large_factor=i;
+		large_factor = i;
 	}
 
 	i++;
 }
 
 printf("%ld\n", large_factor);
+return (0);
+}
