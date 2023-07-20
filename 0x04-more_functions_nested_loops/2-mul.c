@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _isdigit - checks for a digit (0 through 9).
+ * mul - function that multiplies two integers.
  *
- * @c: check for input
+ * @a: check for input
+ * @b: check for input
  *
- * Return: Returns 1 if c is a digit
- * Returns 0 otherwise
+ * Return: Returns 0 success
  *
  */
 int mul(int a, int b)
