@@ -15,7 +15,7 @@ if (size > 0)
 	{
 		for (j = 1; j <= size; j++)
 		{
-			if ((i * j) <= size)
+			if ((i + j) <= size)
 			{
 				_putchar(' ');
 			}
