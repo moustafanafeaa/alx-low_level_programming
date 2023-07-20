@@ -13,4 +13,5 @@ int mul(int a, int b)
 	int mul;
 
 	putchar(mul + 48);
+return (0);
 }
