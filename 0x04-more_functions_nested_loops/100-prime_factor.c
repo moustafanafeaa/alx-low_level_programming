@@ -8,8 +8,9 @@
  */
 int main(void)
 {
-	long int n = 612852475143, i, d;
+	long int n, i, d;
 
+	n = 612852475143;
 	for (i = 1; i <= n; i++)
 	{
 		if (n % i == 0)
@@ -19,9 +20,9 @@ int main(void)
 				printf("%ld\n", i);
 				break;
 			}
+			d = n / i;
+			n = d;
 		}
-		d = n / i;
-		n = d;
 	}
 	return (0);
 }
