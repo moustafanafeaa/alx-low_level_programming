@@ -7,16 +7,21 @@
  * @dest: input pointer to a
  * @src: input int
  *
+ * Return: return dest
+ *
  */
 char *_strcpy(char *dest, char *src)
 {
 	*dest = *src;
-	int i = 0;
-
-	while (dest[i])
-	{
-		printf("%c", dest[i]);
-		++i;
-	}
-	printf("\n");
+	/*int i = 0;
+	*
+	*while (dest[i])
+	*{
+	*	printf("%c", dest[i]);
+	*	++i;
+	*}
+	*printf("\n");
+	*
+	*/
+	return (dest);
 }
