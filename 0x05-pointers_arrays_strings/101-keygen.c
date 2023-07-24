@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 #include "time.h"
+#include <stdio.h>
 
 /**
  * main - entry point
@@ -13,7 +14,7 @@ int main(void)
 	int sum;
 	char c;
 
-	srand(timr(NULL));
+	srand(time(NULL));
 	while (sum <= 2645)
 	{
 		c = rand() % 128;
