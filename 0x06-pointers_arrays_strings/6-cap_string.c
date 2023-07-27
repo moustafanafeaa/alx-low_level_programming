@@ -24,20 +24,13 @@ int isLower(char c)
 int isDelimiter(char c)
 {
 	int i;
-	char delimiter[] = " \t\n, .!?\"{}{}";
+	char delimiter[] = " \t\n,.!?\"{}{}";
 
 	for (i = 0; i < 12; i++)
 		if (c == delimiter[i])
 			return (1);
 	return (0);
 }
-
-
-
-
-
-
-
 
 /**
  * *cap_string -  function that capitalizes all words of a string.
@@ -49,13 +42,13 @@ int isDelimiter(char c)
 char *cap_string(char *s)
 {
 	char *ptr = s;
-	int foundDlimit = 1;
+	int foundDelimit = 1;
 
 	while (*s)
 	{
 		if (isDelimiter(*s))
 			foundDelimit = 1;
-		else if (isDelimiter(*S) && foundDilimit)
+		else if (isDelimiter(*s) && foundDelimit)
 		{
 			*s -= 32;
 			foundDelimit = 0;
@@ -65,4 +58,5 @@ char *cap_string(char *s)
 		s++;
 	}
 	return (ptr);
+	foundDelimit += 11;
 }
