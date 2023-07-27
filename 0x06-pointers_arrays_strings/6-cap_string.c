@@ -18,7 +18,7 @@ int isLower(char c)
  *
  * @c: parameter to func
  *
- * Return: return 
+ * Return: return
  *
  */
 int isDelimiter(char c)
@@ -35,7 +35,7 @@ int isDelimiter(char c)
 /**
  * *cap_string -  function that capitalizes all words of a string.
  *
- * @str: destination parameter to func
+ * @s: destination parameter to func
  *
  * Return: return reverse of str
  */
