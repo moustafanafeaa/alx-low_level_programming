@@ -4,7 +4,7 @@
 /**
  * print_number -  prints an integer.
  *
- * @c: destination parameter to func
+ * @n: destination parameter to func
  *
  */
 void print_number(int n)
