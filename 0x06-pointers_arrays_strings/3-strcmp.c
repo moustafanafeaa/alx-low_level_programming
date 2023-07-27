@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * _strncmp - that compare two strings.
+ * _strcmp - that compare two strings.
  *
  * @s1: destination parameter to func
  * @s2: destination parameter to func
  *
  * Return: pointer dest
  */
-char _strncmp(char *s1, char *s2)
+char _strcmp(char *s1, char *s2)
 {
 	int equal = 0;
 
