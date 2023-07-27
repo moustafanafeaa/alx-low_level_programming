@@ -58,5 +58,4 @@ char *cap_string(char *s)
 		s++;
 	}
 	return (ptr);
-	foundDelimit += 11;
 }
