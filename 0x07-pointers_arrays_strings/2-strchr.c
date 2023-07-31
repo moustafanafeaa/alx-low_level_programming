@@ -3,9 +3,9 @@
  * *_strchr - function that locates a character in a string.
  *
  * @s: string thst scanned
- * @c: char that search from 
+ * @c: char that search from
  *
- * Return: return string 
+ * Return: return string
  */
 char *_strchr(char *s, char c)
 {
