@@ -4,9 +4,9 @@
  *
  * @s: memory area starting address
  * @b: value we will filled
- * @n: number of byte 
+ * @n: number of byte
  *
- * Return: return char 
+ * Return: return char
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -14,5 +14,5 @@ char *_memset(char *s, char b, unsigned int n)
 
 	for (i = 0; n > 0; n--, i++)
 		s[i] = b;
-	return (s)
+	return (s);
 }
