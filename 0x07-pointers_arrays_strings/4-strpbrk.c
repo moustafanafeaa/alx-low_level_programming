@@ -3,9 +3,9 @@
  * *_strpbrk - function that searches a string for any of a set of bytes.
  *
  * @s: string thst scanned
- * @accept: char that search from 
+ * @accept: char that search from
  *
- * Return: return string 
+ * Return: return string
  */
 char *_strpbrk(char *s, char *accept)
 {
