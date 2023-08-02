@@ -1,20 +1,8 @@
 #include "main.h"
-/**
- * is_palindrome -   function that returns 1 if a string is
- *     a palindrome and 0 if not.
- *
- * @s: input string
- * @p: input
- * Return: return 1 if s is palindrome or 0 is not
- */
+
 int pali(char *s, int p);
 int len(char *c);
-int is_palindrome(char *s)
-{
-	int length = len(s);
 
-	return (pali(s, length - 1));
-}
 
 /**
  * len - return length
@@ -25,12 +13,13 @@ int is_palindrome(char *s)
  */
 int len(char *c)
 {
-	if (!*c)
-	{
-		return (0);
-	}
-	return (1 + len(++c));
+if (!*c)
+{
+	return (0);
 }
+return (1 + len(++c));
+}
+
 /**
  * pali - palindrome str
  *
@@ -38,12 +27,29 @@ int len(char *c)
  * @p: the position
  * Return: 0 or 1
  */
+
 int pali(char *s, int p)
 {
-	if (p < 1)
-		return (1);
+if (p < 1)
+	return (1);
 
-	if (*s == (*s + 1))
-		return (pali(s + 1, p - 2));
-	return (0);
+if (*s == *(s + 1))
+	return (pali(s + 1, p - 2));
+return (0);
+}
+
+
+/**
+ * is_palindrome -   function that returns 1 if a string is
+ *     a palindrome and 0 if not.
+ *
+ * @s: input string
+ * @p: input
+ * Return: return 1 if s is palindrome or 0 is not
+ */
+
+int is_palindrome(char *s)
+{
+int length = len(s);
+return (pali(s, length - 1));
 }
