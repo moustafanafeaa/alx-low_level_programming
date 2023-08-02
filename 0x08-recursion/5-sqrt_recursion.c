@@ -1,0 +1,30 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ * _sqrt_recursion - that returns the natural square root of a number.
+ *
+ * @x: input number
+ *
+ */
+int _sqrt_recursion(int n)
+{
+	return (sq(int n, 1));
+}
+
+/**
+ * sq - check if number have natular sqrt
+ *
+ * @n: input number
+ * @x: value counter
+ *
+ * Return: return sqrt
+ */
+int sq(int n, int x)
+{
+	if (x * x == n)
+		return (x);
+	else if (x * x < n)
+		return (sq(n, x + 1));
+	else
+		return (-1);
+}
