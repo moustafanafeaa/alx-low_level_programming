@@ -4,7 +4,7 @@
  *     a palindrome and 0 if not.
  *
  * @s: input string
- *
+ * @p: input
  * Return: return 1 if s is palindrome or 0 is not
  */
 int pali(char *s, int p);
@@ -25,11 +25,11 @@ int is_palindrome(char *s)
  */
 int len(char *c)
 {
-	if (*c != '\0')
+	if (!*c)
 	{
-		return (1 + len(++c));
+		return (0);
 	}
-	return (0);
+	return (1 + len(++c));
 }
 /**
  * pali - palindrome str
