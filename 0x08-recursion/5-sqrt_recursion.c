@@ -3,8 +3,9 @@
 /**
  * _sqrt_recursion - that returns the natural square root of a number.
  *
- * @x: input number
+ * @n: input number
  *
+ * Return: return sqrt of number or -1
  */
 int sq(int n, int x);
 int _sqrt_recursion(int n)
