@@ -43,7 +43,7 @@ int pali(char *s, int p)
 	if (p < 1)
 		return (1);
 
-	if (*s == (*S + 1))
-		return (pali(s + 1, p - 2);
+	if (*s == (*s + 1))
+		return (pali(s + 1, p - 2));
 	return (0);
 }
