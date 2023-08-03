@@ -1,55 +1,47 @@
 #include "main.h"
-
-int pali(char *s, int p);
-int len(char *c);
-
-
 /**
- * len - return length
- *
- * @c: string
- *
- * Return: return len
+ * lindex - return last index
+ * @s: string
+ * Return: count 
  */
-int len(char *c)
+int is_palindrome(char *s);
+int checking(char *s, int st, int end, int mod);
+int lindex(char *s)
 {
-if (!*c)
-{
-	return (0);
-}
-return (1 + len(++c));
-}
+	int c = 0;
 
+	if (*s)
+	{
+		c += lindex(s + 1) + 1;
+	}
+	return (c);
+}
 /**
- * pali - palindrome str
- *
- * @s: str pointer
- * @p: the position
- * Return: 0 or 1
+ * is_palindrome - return 1 if str is palindrome
+ * @s: string
+ * Return: 1 or 0
  */
-
-int pali(char *s, int p)
-{
-if (p < 1)
-	return (1);
-
-if (*s == *(s + 1))
-	return (pali(s + 1, p - 2));
-return (0);
-}
-
-
-/**
- * is_palindrome -   function that returns 1 if a string is
- *     a palindrome and 0 if not.
- *
- * @s: input string
- * @p: input
- * Return: return 1 if s is palindrome or 0 is not
- */
-
 int is_palindrome(char *s)
 {
-int length = len(s);
-return (pali(s, length - 1));
+	int l = lindex(s);
+
+	return (cheching(s, 0, l - 1, l % 2);
+}
+
+/**
+ * checking - check the string
+ * @s: string
+ * @st: start of str
+ * @end: end of str
+ * @mod: model string
+ * Return: bool
+ */
+int checking(char *s, int st, int end, int mod)
+{
+	if ((st == end && mod != 0) || (st == end + 1 && mod == 0)
+		return (1);
+	else if (s[st] != s[end])
+		return (0);
+	else
+		return (checking(s, st + 1, end - 1, mod));
 }
