@@ -16,23 +16,17 @@ int main(int __attribute__ ((unused)) argc, char *argv[])
 
 while (--argc)
 {
-	for (c = argv[argc - 1]; *c; c++)
+	for (c = argv[argc]; *c; c++)
 	{
-		if (*c >= '0' || *c <= '9')
-		{
-			sum += atoi(argv[argc]);
-		}
-		else
+		if (*c < '0' || *c > '9')
 		{
 			printf("Error\n");
 			return (1);
 		}
+		sum += atoi(argv[argc]);
 	}
+}
 	printf("%d\n", sum);
-}
-else
-{
-	printf("%d\n", 0);
-}
-return (0);
+	return (0);
+
 }
