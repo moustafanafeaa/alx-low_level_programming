@@ -11,19 +11,19 @@ int main(int __attribute__ ((unused)) argc, char *argv[])
 	if (argc == 2)
 	{
 		int numofcents = 0, i, mon = atoi(argv[1]);
-		int c[5] = {25, 10, 5, 2, 1};
+		int c[] = {25, 10, 5, 2, 1};
 
-		for (i = 0; i < 0; i++)
+		for (i = 0; i < 5; i++)
 		{
-			if (mon > argv[i])
+			if (mon >= c[i])
 			{
 				numofcents += mon / c[i];
 				mon %= c[i];
-				if (mon & c[i] == 0)
+				if (mon % c[i] == 0)
 					break;
 			}
 		}
-		printf("%d\n", numofcents);
+	printf("%d\n", numofcents);
 	}
 	else
 	{
