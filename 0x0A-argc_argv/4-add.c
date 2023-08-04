@@ -12,13 +12,13 @@
 int main(int __attribute__ ((unused)) argc, char *argv[])
 {
 	int sum = 0;
-	char *c;
+	char *s;
 
 while (--argc)
 {
-	for (c = argv[argc]; *c; c++)
+	for (s = argv[argc]; *s; s++)
 	{
-		if (*c < '0' || *c > '9')
+		if (*s < '0' || *s > '9')
 		{
 			printf("Error\n");
 			return (1);
