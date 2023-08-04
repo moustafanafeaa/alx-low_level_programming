@@ -11,16 +11,18 @@
  */
 int main(int __attribute__ ((unused)) argc, char *argv[])
 {
-	int sum = 0, i;
-if (argc > 1)
+	int sum = 0;
+	char *c;
+
+while (--argc)
 {
-	for (i = 1; i < argc; i++)
+	for (c = argv[argc - 1]; *c; c++)
 	{
-		if (isdigit((char)argv[i]))
+		if (*c >= '0' || *c <= '9')
 		{
 			sum += atoi(argv[i]);
 		}
-		else if (isdigit(atoi(argv[i])) == 0)
+		else
 		{
 			printf("Error\n");
 			return (1);
