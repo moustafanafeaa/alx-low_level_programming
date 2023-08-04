@@ -20,7 +20,7 @@ while (--argc)
 	{
 		if (*c >= '0' || *c <= '9')
 		{
-			sum += atoi(argv[i]);
+			sum += atoi(argv[argc]);
 		}
 		else
 		{
