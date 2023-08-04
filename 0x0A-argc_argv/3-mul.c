@@ -8,9 +8,9 @@
  * @argv: array of args.
  * Return: return 0 success.
  */
-int main(int __attribute__ ((unused)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int mult = 1, i;
+	int mult;
 
 if (argc == 3)
 {
