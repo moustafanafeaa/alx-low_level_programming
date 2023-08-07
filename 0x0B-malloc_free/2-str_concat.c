@@ -19,12 +19,13 @@ char *str_concat(char *s1, char *s2)
 	;
 	new = malloc((size1 + size2) * sizeof(char) + 1);
 
-	for (i = 0; i < size1; i++)
+	for (i = 0; i < size1 + size2; i++)
 	{
-		new[i] = s1[i];
+		if (i < size1)
+			new[i] = s1[i];
+		else
+			new[i] = s2[i - size1];
 	}
-	for (i = size1, j = 0; j < size2; i++, j++)
-		new[i] = s2[j];
-
+	new[i] = '\0';
 	return (new);
 }
