@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * _strdup - function that concatenates two strings.
+ * str_concat - function that concatenates two strings.
  * @s1:string 1
  * @s2: str 2
  * Return: return pointer
@@ -16,8 +16,8 @@ char *str_concat(char *s1, char *s2)
 	;
 
 	for (i = 0; s1[size1] != '\0'; size1++)
-	;	
-	new = malloc((size1+size2) * sizeof(char) + 1);
+	;
+	new = malloc((size1 + size2) * sizeof(char) + 1);
 
 	for (i = 0; i < size1; i++)
 	{
