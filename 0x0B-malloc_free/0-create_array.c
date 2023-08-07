@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * create_array - function that creates an array of chars, 
+ * create_array - function that creates an array of chars,
  * and initializes it with a specific char.
  * @size:size of int
  * @c: char
@@ -17,5 +17,4 @@ char *create_array(unsigned int size, char c)
 	while (size--)
 		n[size] = c;
 	return (n);
-
 }
