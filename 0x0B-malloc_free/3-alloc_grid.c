@@ -13,7 +13,7 @@ int **alloc_grid(int width, int height)
 	int **arr, i;
 
 	arr = calloc(height, sizeof(*arr));
-	if (arr == 0)
+	if (arr == NULL)
 		return (NULL);
 
 	if (width <= 0 || height <= 0)
