@@ -30,5 +30,5 @@ char *_strdup(char *str)
 	}
 	else
 		return (NULL);
-return (ps)
+return (ps);
 }
