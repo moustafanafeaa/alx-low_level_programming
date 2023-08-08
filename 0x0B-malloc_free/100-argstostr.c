@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+int _len(char *str);
 /**
  * argstostr -  concatenates all the arguments of your program
  * @ac:int
