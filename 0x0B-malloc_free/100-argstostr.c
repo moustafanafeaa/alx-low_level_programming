@@ -7,11 +7,10 @@
  * @av: array of char
  * Return: return pointer
  */
-int _len(char *str);
 
 char *argstostr(int ac, char **av)
 {
-	int i, size = 0,j, x = 0;
+	int i, size = 0, j, x = 0;
 	char *str;
 
 	if (ac == 0 || av == NULL)
@@ -21,8 +20,8 @@ char *argstostr(int ac, char **av)
 	{
 		size += _len(av[i]);
 	}
-	
-	str = malloc(1 * sizeof(char) + 1);
+
+	str = malloc(size * sizeof(char) + 1);
 	if (str == 0)
 		return (NULL);
 	for (i = 0; i < ac; i++)
@@ -32,7 +31,7 @@ char *argstostr(int ac, char **av)
 			str[x] = av[i][j];
 			x++;
 		}
-		
+
 		if (str[x] == '\0')
 			str[x++] = '\n';
 	}
@@ -42,7 +41,7 @@ char *argstostr(int ac, char **av)
 
 /**
  * _len - return length of str
- * @s: string
+ * @str: string
  * Return: return number of length
  */
 int _len(char *str)
