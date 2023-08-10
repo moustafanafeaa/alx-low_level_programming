@@ -1,22 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-char *_mset(char *str, char x, unsigned int num);
-/**
- * _mset - fills memory
- * @str: pointer
- * @x: char equal
- * @num:size
- * Return: return pointer
- */
-char *_mset(char *str, char x, unsigned int num)
-{
-	char *po = str;
-
-	while (num--)
-		*str++ = x;
-	return (po);
-}
 /**
  * *_calloc - function that allocates memory for an array,
  *  using malloc.
@@ -27,15 +11,17 @@ char *_mset(char *str, char x, unsigned int num)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *p;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	p = malloc(sizeof(int) * nmemb);
+	p = malloc(size * nmemb);
 	if (p == NULL)
 		return (NULL);
 
-	_mset(p, 0, sizeof(int) * nmemb);
+	for (i = 0; i < (nmemb * size); i++)
+		p[i] = 0;
 
 return (p);
 }
