@@ -18,7 +18,7 @@ char *_mset(char *str, char x, unsigned int num)
 	return (po);
 }
 /**
- * _calloc - function that allocates memory for an array,
+ * *_calloc - function that allocates memory for an array,
  *  using malloc.
  * @size: unsigned int size of arr.
  * @nmemb: unsinged arr
