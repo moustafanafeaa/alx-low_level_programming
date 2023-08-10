@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * *_realloc - function that creates an array of integers
- * @ptr: pointer to memory 
+ * @ptr: pointer to memory
  * @old_size: alocate speace for ptr
  * @new_size: new size in byte
  * Return: return pointer
