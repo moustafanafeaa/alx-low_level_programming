@@ -29,11 +29,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *p;
 
 	if (nmemb == 0 || size == 0)
-		return (0);
+		return (NULL);
 
 	p = malloc(sizeof(int) * nmemb);
 	if (p == NULL)
-		return (0);
+		return (NULL);
 
 	_mset(p, 0, sizeof(int) * nmemb);
 
