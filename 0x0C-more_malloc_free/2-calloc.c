@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-void *_calloc(unsigned int nmemb, unsigned int size);
 char *_mset(char *str, char x, unsigned int num);
 /**
- * _mset - fulls memory
+ * _mset - fills memory
  * @str: pointer
  * @x: char equal
  * @num:size
@@ -19,7 +18,8 @@ char *_mset(char *str, char x, unsigned int num)
 	return (po);
 }
 /**
- * _calloc - function that allocates memory for an array, using malloc.
+ * _calloc - function that allocates memory for an array,
+ *  using malloc.
  * @size: unsigned int size of arr.
  * @nmemb: unsinged arr
  * Return: return pointer
