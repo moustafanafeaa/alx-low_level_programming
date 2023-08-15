@@ -5,7 +5,7 @@
  * @s: string
  * Return: numer of length
  */
-int len(char *s)
+int len(const char *s)
 {
 	int len = 0;
 
@@ -23,9 +23,9 @@ char *copy(char *d, char *s)
 {
 	int x;
 
-	for (i = 0; s[i] != '\0'; i++)
-		d[i] = s[i];
-	d[i] = '\0';
+	for (x = 0; s[x]; x++)
+		d[x] = s[x];
+	d[x] = '\0';
 
 	return (d);
 }
@@ -44,7 +44,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (!name || age < 0 || !owner)
 		return (0);
 
-	d = ((dog_t *) malloc(sizeof(dog_t));
+	d = ((dog_t *) malloc(sizeof(dog_t)));
 	if (d == 0)
 		return (0);
 
@@ -63,6 +63,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	d->name = copy(d->name, name);
 	d->age = age;
-	d->owner = copy(dog->owner, owner);
+	d->owner = copy(d->owner, owner);
 	return (d);
 }
