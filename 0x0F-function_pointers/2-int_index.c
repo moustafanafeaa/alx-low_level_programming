@@ -5,6 +5,7 @@
  * @array: array of int
  * @size: size of arr
  * @cmp: ptr to func
+ * Return: return index or -1
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
