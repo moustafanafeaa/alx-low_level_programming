@@ -4,7 +4,7 @@
  * int_index -that searches for an integer.
  * @array: array of int
  * @size: size of arr
- * @cmp: ptr to func 
+ * @cmp: ptr to func
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
