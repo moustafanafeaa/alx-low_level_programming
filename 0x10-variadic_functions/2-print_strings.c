@@ -22,4 +22,4 @@ char *s;
 		printf("%s%s", (s = va_arg(args, char *)) ? s : "(nil)",
 				i ? (separator ? separator : "") : "\n");
 va_end(args);
-}	
+}
