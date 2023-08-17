@@ -5,6 +5,7 @@
  * print_numbers - print numbers
  * @n: num of args
  * @separator: str
+ * @...: args
  * Return: int sum
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -12,7 +13,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list args;
 
-	if (n == 0)
+	if (!n)
 	{
 		printf("\n");
 		return;
