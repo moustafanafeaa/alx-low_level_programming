@@ -23,8 +23,15 @@ void print_all(const char * const format, ...)
 		{
 			break;
 		}
+
+		if (format[index] == 'e')
+		{
+			index++;
+			continue;
+		}
 		if (num_args > 0)
 			printf(", ");
+
 
 		switch (format[index])
 		{
