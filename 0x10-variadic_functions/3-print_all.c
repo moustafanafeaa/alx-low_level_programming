@@ -8,22 +8,23 @@
 
 void print_all(const char * const format, ...)
 {
+	char c, *s;
 	va_list args;
-	va_start(args, format);
-
-	char c;
 	int i;
 	float f;
-	char *s;
 
 	int index = 0;
 	int num_args = 0;
+	va_start(args, format);
+
 	while (format[index] != '\0')
 	{
 		if (num_args >= 4)
 		{
 			break;
 		}
+		if (num_args > 0)
+			printf(", ");
 
 		switch (format[index])
 		{
