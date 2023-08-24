@@ -2,7 +2,7 @@
 /**
  * list_len - return list len
  * @h: s
- * Return : return int
+ * Return: return int
  */
 size_t list_len(const list_t *h)
 {
